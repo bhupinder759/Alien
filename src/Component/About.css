@@ -540,6 +540,17 @@
     }
   }
 
+  @media (max-width: 480px) {
+
+    .headingbox {
+      gap: 0;
+    }
+    
+    .headingbox img {
+      width: 80px;
+    }
+  }
+
 /* section 5 */
 
 .aboutsection5 {

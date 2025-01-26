@@ -868,4 +868,14 @@ body {
   .icon {
     font-size: 1.2rem;
   }
+
+  @media (max-width: 378px) {
+    .social-icons img {
+      width: 35px;
+    }
+
+    .homepage__buttons button{
+      min-width: 300px;
+    }
+  }
 }

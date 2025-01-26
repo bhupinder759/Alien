@@ -191,6 +191,16 @@
     text-align: center;
   }  
 
+  @media (max-width: 480px) {
+    .clubsection3__heading h2 {
+      font-size: 3rem;
+    }
+  
+    .clubsection3__heading p {
+      font-size: 1rem;
+    }  
+  }
+
   /* section four */
   .clubsection4__background {
     position: relative;

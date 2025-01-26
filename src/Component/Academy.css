@@ -87,6 +87,12 @@
         width: 100%;
     }
 
+    @media (max-width: 480px) {
+      .academy-box {
+        width: 300px;
+      }
+    }
+
   }
 
   /* section two */
