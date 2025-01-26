@@ -1,0 +1,104 @@
+.mintsection {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    margin-bottom: 100px;
+}
+
+.mint-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mint-heading h2 {
+    font-size: 3.2rem;
+    font-family: "atomic age";
+    font-weight: 400;
+    text-align: center;
+    color: #B9954F;
+    margin: 20px 0;
+}
+
+.mint-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 5rem auto;
+  width: 100%;
+}
+
+.mint-boxes {
+  width: 80%;
+  height: 40vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+}
+
+.mint-container__item {
+  width: 100%;
+  max-width: 400px;
+  height: 250px;
+  padding: 20px;
+  background: white;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  font-family: "exo";
+  font-weight: 400;
+  border: #329415 solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.mint-container__item h3 {
+  font-size: 2rem;
+  color: #329415;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.mint-container__item h4 {
+  font-size: 1.5rem;
+  color: #333;
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+.mint-container__item p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.mintright {
+  position: relative;
+  top: 9rem;
+}
+
+
+/* Responsive for tablets and mobile devices */
+@media (max-width: 768px) {
+  .mint-boxes {
+      flex-direction: column;
+      gap: 1.5rem;
+      height: auto;
+  }
+
+  .mint-container__item {
+      width: 100%;
+  }
+
+  .mintright {
+      top: 0;
+  }
+}
+

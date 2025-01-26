@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Atomic+Age&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* General Navbar Styling */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  /* border-bottom: 1px solid #ddd; */
+  position: relative;
+}
+
+.navbar__logo img {
+  height: 100px;
+  width: 100px;
+}
+
+.navbar__wallet .wallet-icon {
+  width: 50px;
+  height: 50px;
+  color: #B9954F;
+}
+
+.navbar__wallet svg {
+  width: 50px;
+  height: 50px;
+  color: #B9954F;
+}
+
+/* Centered Navigation (Hidden on mobile) */
+.navbar__nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar__nav ul {
+  list-style: none;
+  display: flex;
+  gap: 3.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Add ::before for hover/active effect */
+.navbar__nav ul li a {
+  position: relative; /* Required for ::before to position relative to the link */
+  padding: 10px;
+  font-size: 30px;
+  text-decoration: none;
+  color: #329415;
+  font-family: "Atomic Age", serif;
+  font-weight: 400;
+  font-style: normal;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.navbar__nav ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0; /* Place at the bottom of the link */
+  left: 0;
+  width: 0; /* Hidden initially */
+  height: 2px; /* Thickness of the underline */
+  background-color: #329415; /* Color of the underline */
+  transition: width 0.3s ease; /* Smooth width transition */
+}
+
+.navbar__nav ul li a:hover::before,
+.navbar__nav ul li a.active::before {
+  width: 100%; /* Full width on hover or active */
+}
+
+.navbar__nav ul li a:hover {
+  color: black; /* Change text color on hover */
+}
+
+.navbar__nav ul li a.active {
+  color: black; /* Active link text color */
+  /* font-weight: bold; Optional: Make the active link bold */
+}
+
+
+/* Hamburger Menu (Mobile Only) */
+.navbar__burger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.burger-line {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  border-radius: 2px;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -100%; /* Hidden initially */
+  width: 250px;
+  height: 100%;
+  background-color: #329415;
+  color: #ECDD91;
+  padding: 1rem;
+  transition: left 0.3s ease;
+  z-index: 1000;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.sidebar.open {
+  left: 0; /* Slide-in */
+}
+
+.sidebar__close {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.sidebar__nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sidebar__nav ul li a {
+  text-decoration: none;
+  color: #ECDD91;
+  font-size: 1.2rem;
+  font-family: "Atomic Age";
+}
+
+
+.sidebar__nav ul li a:hover {
+  color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 1120px) {
+  .navbar__logo img {
+    height: 80px;
+    width: 80px;
+  }
+
+  .navbar__nav ul {
+    gap: 1.5rem;
+  }
+
+  .navbar__nav ul li a {
+    font-size: 20px;
+  }
+
+  .navbar__wallet .wallet-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .navbar__wallet svg { 
+    width: 40px;
+    height: 40px;
+  }
+
+  .sidebar {
+    width: 200px;
+  }
+
+} 
+
+@media (max-width: 935px) {
+  .navbar__logo img {
+    height: 60px;
+    width: 60px;
+  }
+
+  .navbar__nav ul {
+    gap: 1rem;
+  }
+
+  .navbar__nav ul li a {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar__nav {
+    display: none; /* Hide center navigation on mobile */
+  }
+
+  .navbar__burger {
+    display: flex;
+  }
+}
+

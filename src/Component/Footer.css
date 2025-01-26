@@ -1,0 +1,90 @@
+.footer {
+    text-align: center;
+  }
+  
+  .footer-container {
+    background-color: #ECDD91;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    flex-direction: row; /* Default for desktop */
+  }
+  
+  .footer-logo {
+    width: 17%;
+    padding: 10px;
+    text-align: center; /* Center logo in mobile view */
+  }
+  
+  .footer-logo img {
+    height: 200px;
+    width: auto;
+  }
+  
+  .footer_content {
+    width: 74%;
+    height: auto;
+    display: block;
+  }
+  
+  .footer-text p {
+    font-family: "atomic age", sans-serif;
+    font-size: 1.2rem;
+    color: #4D4D4D;
+    margin: 20px;
+    text-align: left;
+  }
+  
+  .footer-nav {
+    margin: 20px;
+    display: flex;
+    gap: 30px;
+  }
+
+  .footer-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 3.5rem;
+    margin: 0;
+    padding: 0;
+  }  
+  
+  .footer-nav a {
+    font-family: "atomic age", sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #4D4D4D;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-nav a:hover {
+    color: #00AF69;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column; /* Stack logo, text, and nav vertically */
+      align-items: center;
+    }
+  
+    .footer-logo {
+      width: 100%;
+      margin-bottom: 20px; /* Add spacing between sections */
+    }
+  
+    .footer-text p {
+      text-align: center; /* Center-align the paragraph in mobile view */
+    }
+  
+    .footer-nav {
+      flex-direction: column;
+      gap: 10px; /* Reduce spacing for mobile view */
+    }
+
+    .footer-nav ul {
+      flex-direction: column;
+      gap: 10px; /* Reduce spacing for mobile view */
+    }
+  }
+  

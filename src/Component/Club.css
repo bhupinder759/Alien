@@ -1,0 +1,230 @@
+.clubsection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  
+  /* Background Image with Padding and Border Radius */
+  .clubsection__background {
+    position: relative;
+    width: 95%;
+    height: 90vh;
+    background: url('../assets/ai-generated-9248643.jpg') no-repeat center center/cover;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Content Overlay */
+  .clubsection__content {
+    position: relative;
+    z-index: 2;
+    gap: 2rem;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    color: white;
+    overflow-y: auto;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    scroll-behavior: smooth;
+  }
+  
+  /* First clubsection: Heading and Line */
+  .clubsection__heading {
+    position: absolute;
+    top: 34%;
+    left: 10%;
+    transform: translate(0, -50%);
+    color: #ECDD91;
+    text-align: left;
+  }
+  
+  .clubsection__heading h2 {
+    font-size: 4rem;
+    font-family: "atomic age", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  
+  .clubsection__heading p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #ECDD91;
+    line-height: 1.5;
+    max-width: 400px;
+    font-family: "exo";
+  }  
+
+  .clubbutton {
+    width: 270px;
+    height: 45px;
+    background-color: #329415;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    margin-top: 20px;
+  }
+
+  .clubbutton p {
+    color: #ECDD91;
+    font-size: 30px;
+    font-family: "exo";
+    margin: 0;
+  }
+      
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    /* .clubsection__background { height: 400px; } */
+    .clubsection__content {
+      gap: 1.5rem;
+    }
+    
+    .clubsection__heading {
+        position: static;
+        text-align: center;
+        transform: none;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    
+      .clubsection__heading h2 {
+        font-size: 2.5rem;
+      }
+    
+      .clubsection__heading p {
+        font-size: 1rem;
+        max-width: none;
+      }  
+  }
+
+  /* section two */
+  .clubsection2 {
+    width: 100%;
+    height: auto;
+    margin: 40px 0;
+  }
+
+  .clubsection2 h1 {
+    font-size: 4rem;
+    font-family: "atomic age";
+    font-weight: 400;
+    color: #B9954F;
+    text-align: center;
+    margin: 60px 0;
+  }
+
+  .clubslide {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  /* section three */
+  .clubsection3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 100px 0;
+  }
+  
+  /* Background Image with Padding and Border Radius */
+  .clubsection3__background {
+    position: relative;
+    width: 90%;
+    height: 60vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/dollars-8742457.jpg') no-repeat center center/cover;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Content Overlay */
+  .clubsection3__content {
+    position: relative;
+    z-index: 2;
+    gap: 2rem;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    color: white;
+    overflow-y: auto;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    scroll-behavior: smooth;
+  }
+  
+  /* First clubsection: Heading and Line */
+  .clubsection3__heading {
+    margin-top: 3rem;
+    text-align: center;
+  }
+  
+  .clubsection3__heading h2 {
+    font-size: 5rem;
+    font-family: "atomic age";
+    color: #ECDD91;
+    margin: 0;
+  }
+  
+  .clubsection3__heading p {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #ECDD91;
+    line-height: 1.5;
+    font-family: "exo";
+    text-align: center;
+  }  
+
+  /* section four */
+  .clubsection4__background {
+    position: relative;
+    width: 90%;
+    height: 60vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/tendency-1445464.jpg') no-repeat center center/cover;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+    /* section five */
+    .clubsection5__background {
+        position: relative;
+        width: 90%;
+        height: 60vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/cheers-204742.jpg') no-repeat center center/cover;
+        border-radius: 40px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+    
+    @media (max-width: 768px) {
+        .clubsection3__heading {
+            margin-top: 0;
+          }
+    }
+
+    @media (max-width: 480px) {
+      .clubsection2 {
+        padding: 0 20px 0 20px;
+      }
+
+      .clubsection2 h1 {
+        font-size: 3.1rem;
+      }
+    } 
