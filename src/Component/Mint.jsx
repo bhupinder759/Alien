@@ -13,8 +13,8 @@ const Mint = () => {
 
       <div className="mint-container">
         <div className="mint-boxes">
-          {/* Left Container */}
-          <div className="mint-container__item left">
+          {/* mintleft Container */}
+          <div className="mint-container__item mintleft">
             <h3>Phase 1</h3>
             <h4>Conceptualization & Design:</h4>
             <p>Define the token concept and create branding elements.</p>
@@ -28,8 +28,8 @@ const Mint = () => {
         </div>
 
         <div className="mint-boxes">
-          {/* Left Container */}
-          <div className="mint-container__item left">
+          {/* mintleft Container */}
+          <div className="mint-container__item mintleft">
             <h3>Phase 3</h3>
             <h4>Smart Contract and Token Minting:</h4>
             <p>Develop and deploy a secure smart contract for token creation.</p>
@@ -43,8 +43,8 @@ const Mint = () => {
         </div>,
 
         <div className="mint-boxes">
-          {/* Left Container */}
-          <div className="mint-container__item left">
+          {/* mintleft Container */}
+          <div className="mint-container__item mintleft">
             <h3>Phase 5</h3>
             <h4>Presale:</h4>
             <p>Conduct an initial sale phase to raise liquidity and bootstrap token distribution.</p>
@@ -58,8 +58,8 @@ const Mint = () => {
         </div>
 
         <div className="mint-boxes">
-          {/* Left Container */}
-          <div className="mint-container__item left">
+          {/* mintleft Container */}
+          <div className="mint-container__item mintleft">
             <h3>Phase 7</h3>
             <h4>DEX Token Launch and Permanent Liquidity Lock:</h4>
             <p>Launch the token on decentralized exchanges and lock liquidity to ensure stability.</p>

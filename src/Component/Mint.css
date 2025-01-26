@@ -102,3 +102,8 @@
   }
 }
 
+@media (max-width: 480px) {
+  .mintright, .mintleft {
+    height: auto;
+  }
+}

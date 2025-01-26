@@ -355,6 +355,11 @@
     }
   }
 
+  @media (max-width: 353px) {
+    .aboutsection2 {
+      margin-top: 30rem;
+    }
+  }
 
   /* section third */
   .aboutsection3 {
@@ -545,7 +550,7 @@
     .headingbox {
       gap: 0;
     }
-    
+
     .headingbox img {
       width: 80px;
     }
