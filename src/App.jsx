@@ -1,13 +1,13 @@
-import './App.css'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Header from './Component/Header'
-import Home from './Component/Home'
-import Footer from "./Component/Footer.jsx"
-import About from "./Component/About.jsx"
-import Contact from "./Component/Contact.jsx"
-import Academy from "./Component/Academy.jsx"
-import Club from "./Component/Club.jsx"
-import Mint from "./Component/Mint.jsx"
+import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Header from './Component/Header';
+import Home from './Component/Home';
+import Footer from "./Component/Footer.jsx";
+import About from "./Component/About.jsx";
+import Contact from "./Component/Contact.jsx";
+import Academy from "./Component/Academy.jsx";
+import Club from "./Component/Club.jsx";
+import Mint from "./Component/Mint.jsx";
 
 
 function App() {
