@@ -5,7 +5,6 @@
 body {
     margin: 0;
     padding: 0;
-    /* overflow: hidden; */
     scroll-behavior: smooth;
   }
   
@@ -24,11 +23,9 @@ body {
   .homepage__image {
     position: absolute;
     top: 0;
-    left: 40px;
-    right: 40px;
     width: 95%;
     height: 100%;
-    background: url('../assets/home.jpeg') no-repeat center center/cover ;
+    background: url('../assets/Earth_Galaxy_Milky_Way_stars-space-planet.png') no-repeat center center/cover ;
     z-index: 1;
     border-radius: 50px;
   }
@@ -42,7 +39,8 @@ body {
     position: relative;
     z-index: 2;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
     height: 100%;
     width: 100%;
@@ -55,12 +53,12 @@ body {
   
   /* Left Side: Heading and Subheading */
   .homepage__text {
-    flex: 1;
-    text-align: left;
-    margin-left: 3rem;
+    /* flex: 1; */
+    text-align: center;
+    /* margin-left: 3rem; */
     /* margin-top: 5rem; */
-    max-width: 40%;
-    height: 700px;
+    max-width: 80%;
+    height: auto;
   }
   
   .homepage__text h1 {
@@ -85,15 +83,39 @@ body {
     font-size: 1.5rem;
     margin: 0;
   }
+
+  .overimage1 {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .overimage1 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
   
   /* Right Side: Buttons */
   .homepage__buttons {
+    width: 80%;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
     gap: 1rem;
+    margin-top: 30px;
   }
   
   .homepage__buttons button {
+    width: 410px;
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -102,7 +124,7 @@ body {
     background-color: white;
     color: #00AF69;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 600;
     font-family: "Exo";
     cursor: pointer;
     border-radius: 40px;
@@ -110,179 +132,78 @@ body {
   }
 
   .homepage__buttons button img {
-    width: 25px;
+    width: 40px;
   }
-  
-  .homepage .overimage {
-    position: absolute;
-    display: flex;
-    top: 30rem;
-    left: 100px;
-    gap: 21rem;
-  }
-  
-  /* .homepage .homepage__content .overimage1 {
-    width: 50px;
-} */
-
-.homepage .overimage1 img {
-    width:300px;
-    margin-left: -200px;
-}
-
 
   /* Responsive Design */
 
-  @media (max-width: 1600px) {
+  /* @media (max-width: 1600px) {
     .homepage .overimage {
         position: absolute;
         top: 43rem;
         left: auto;   
         gap: 210;    
     }
-  }
-  @media (max-width: 1138px) {
-
-    /* .homepage {
-      height: 100vh;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      overflow: hidden;
-    } */
+  } */
+  @media (max-width: 1302px) {
 
     .homepage__image {
-      background: url('../assets/home.jpeg') no-repeat center center/cover;
-      z-index: 1;
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
+      overflow-y: scroll;
     }
 
     .homepage__content {
-      flex-direction: column;
-      text-align: left;
+      height: auto;
     }
-  
+
     .homepage__text {
-      text-align: center;
-      max-width: 100%;
-      margin-bottom: 2rem;
+      width: 100%;
     }
-  
+
     .homepage__buttons {
-      flex-direction: row;
-      flex-wrap: wrap;
-      /* justify-content: center; */
-      /* overflow-wrap: break-word; */
-      gap: 0.5rem;
-    }
-  
-    .homepage__buttons button {
-      flex: 1;
-      min-width: 350px;
+      width: 100%;
     }
 
     .homepage .overimage {
-        position: absolute;
-        display: flex;
-        top: 22rem;
-        left: 100px;
-        gap: 22rem;
-      }   
-    
-    .homepage .overimage1 img {
-        width:200px;
-        margin-left: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: auto;
     }
-    
-
-
-    /* .homepage__buttons :nth-last-child() {
-        min-width: 200px;
-    } */
   } 
 
-  @media (max-width: 768px) {
-    .homepage__content {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .homepage__text {
-      width: 100%;
-      margin: auto;
-      /* max-width: 100%; */
-      /* margin-bottom: 2rem; */
-    }
-  
-    .homepage__buttons {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 0.5rem;
-    }
-  
-    .homepage__buttons button {
-      flex: 1;
-      max-width: 150px;
-    }
-
-    .homepage .overimage {
-        position: absolute;
-        flex-direction: column;
-        top: 80rem;
-        left: auto;   
-        gap: 0;    
-    }
-
-    .homepage .overimage1 img {
-        width:200px;
-        margin-left: 0;
-    }
-  }
   
   @media (max-width: 480px) {
 
+    .homepage__text {
+      max-width: 100%;
+    }
+
     .homepage__text h1 {
-      font-size: 3rem;
+      font-size: 3.3rem;
     }
 
     .homepage__text h3 {
-      font-size: 1.5rem;
+      font-size: 1.7rem;
     }
   
     .homepage__text p {
       font-size: 1.0rem;
     }
+   }
   
+  @media (max-width: 375px) {
+    .overimage1 {
+      width: 300px;
+      height: 300px;
+    }
+
     .homepage__buttons button {
-      font-size: 0.9rem;
-      padding: 0.6rem 1rem;
+      font-size: 1rem;
     }
 
-    .homepage .overimage {
-        position: absolute;
-        flex-direction: column;
-        top: 65rem;
-        left: auto;   
-        gap: 0;    
+    .homepage__buttons button img {
+      width: 30px;
     }
-  }
-  
-  @media (min-width: 1786px) {
-
-    .homepage .overimage {
-        position: absolute;
-        top: 55rem;
-        left: auto;   
-        gap: 210;    
-    }
-
   }
 
 /* second section */

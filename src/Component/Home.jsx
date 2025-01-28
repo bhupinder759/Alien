@@ -1,8 +1,6 @@
 import {useState,} from 'react'
 import "./Home.css"
 import tick from "../assets/Vector.svg"
-import image1 from "../assets/Academy-removebg-preview.png"
-import club from "../assets/Club-removebg-preview.png"
 import alien from "../assets/Alien-removebg-preview.png"
 // import CustomSlider from "./CustomSlider.jsx"
 import Slide from "./Slide.jsx";
@@ -114,17 +112,19 @@ const Home = () => {
             <button><img src={tick} alt="" />Decentralized Science (DeSci)</button>
             <button><img src={tick} alt="" />Gaming Finance (GameFi)</button>
             <button><img src={tick} alt="" />InterPlanetaryFileSystem (IPFS)</button>
+            <button><img src={tick} alt="" />Quantum Financial System  (QFS)</button>
             <button><img src={tick} alt="" />Renewable Finance (ReFi)</button>
             <button><img src={tick} alt="" />Real World Assets (RWA)</button>
             <button><img src={tick} alt="" />Social Finances (SocialFi)</button>
             <button><img src={tick} alt="" />Traditional Finances (TradFi)</button>
           </div>
 
-          {/* images */}
+          {/* images 
           <div className='overimage'>
             <img src={image1} alt="" />
             <img src={club} alt="" />
           </div>
+          */}
 
         </div>
       </div>
@@ -251,8 +251,8 @@ const Home = () => {
         {/* Heading */}
         <h2 className="heading">Questions?</h2>
         <p className="subtitle">
-          Whether you're curious about features, a free trial, or even press
-          releases, we're here to answer all your questions.
+          Whether you&apos;re curious about features, a free trial, or even press
+          releases, we&apos;re here to answer all your questions.
         </p>
 
         {/* Input and Button */}

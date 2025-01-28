@@ -1,9 +1,9 @@
 import { useState, useEffect, useCallback, useMemo } from "react";
 import "./Slide.css";
-import image1 from "../assets/UD.png";
-import image2 from "../assets/WWF.png";
-import image3 from "../assets/SEOBirdLife.png";
-import image4 from "../assets/sterling-silver-hexagon-stud-earrings-18k-rose-gold-product-details-62a0e926b74f8.png";
+import image1 from "../assets/Academy-removebg-preview.png";
+import image2 from "../assets/Club-removebg-preview.png";
+import image3 from "../assets/CoNetWorKing.png";
+import image4 from "../assets/Alien-removebg-preview.png";
 import image5 from "../assets/sterling-silver-hexagon-stud-earrings-24k-gold-both-62a0e926b7574.png";
 import image6 from "../assets/Investing.png";
 import image7 from "../assets/NOAA.png";
